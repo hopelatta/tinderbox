@@ -1,0 +1,67 @@
+# NOTES — Tinderbox Fork
+
+## Why I forked this
+
+This repository is a fork of **Tinderbox**, an open-source seed project for building
+a Tinder-like dating interface. I am studying this code to understand how core
+interaction mechanics are implemented (swipes, profiles, matching UI) and how those
+mechanics shape user behavior and system incentives.
+
+My goal is not to republish this as a complete product, but to *ground abstract
+trust & safety concepts in concrete code patterns* that show how social systems
+mediate attention and interaction.
+
+## What this codebase contains
+
+- Basic matching and swipe interface implementation
+- Profile rendering and navigation
+- Simple server-client interaction for likes, skips, and connections
+- UI elements that reflect typical dating app affordances
+
+These components reveal how *user action loops* are built and how they shape
+exposure, attention allocation, and early user decisions.
+
+## What I’m focusing on
+
+From a platform integrity and trust & safety lens, I am paying attention to:
+
+### Interaction pacing
+- Swipe velocity (how fast a user can browse profiles)
+- Lack of friction between actions
+- How limits might reduce “spray and pray” behavior
+
+### Feedback loops
+- How likes/dislikes update user perception of value
+- How immediate feedback reinforces engagement
+
+### Safety surface areas
+- Where private messaging would be inserted
+- What risks emerge when users can contact instantly
+- How abuse patterns could be throttled or signaled earlier
+
+### UI and behavior assumptions
+- What counts as normal vs anomalous pacing
+- How users perceive rate limits or cooldowns
+- What default interactions assume about user intent
+
+## How this connects to my broader work
+
+I am exploring how backend systems and UI affordances interact to shape:
+- attention asymmetry
+- ghosting as structural outcome
+- messaging safety
+- risk signals that do not rely on content
+
+This fork helps bridge *systemic framing* with *engineering mechanics*.
+
+See also:
+- `platform-integrity-systems/rate-limiting.md`
+- `dating-trust-safety-playbook/threat-model.md`
+
+## Attribution
+
+This fork is based on the original **Tinderbox** project. All rights, licensing,
+and original authorship are retained by the original authors. No claim of
+original ownership is made here.
+
+Original project: https://github.com/teachyourcomputer/tinderbox
